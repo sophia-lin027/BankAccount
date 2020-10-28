@@ -9,8 +9,9 @@ public class DriverBankAccount {
     System.out.println(b1.deposit(55));
     System.out.println(b1.getBalance());
     System.out.println();
+    System.out.println(b1.authenticate("random1"));
+    System.out.println();
     System.out.println("Account b1: " + b1.toString());
     System.out.println("Account b2: " + b2.toString());
-
   }
 }
