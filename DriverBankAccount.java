@@ -8,7 +8,9 @@ public class DriverBankAccount {
     System.out.println(b1.getAccountID());
     b1.setPassword("random3");
     System.out.println(b1.deposit(55));
-    System.out.println(b1.getBalance());
+    System.out.println("new balance: " + b1.getBalance());
+    System.out.println(b1.withdraw(20));
+    System.out.println("new balance: " + b1.getBalance());
     System.out.println(b1.authenticate("random1"));
     System.out.println();
 
@@ -16,8 +18,10 @@ public class DriverBankAccount {
     System.out.println(b2.getBalance());
     System.out.println(b2.getAccountID());
     b2.setPassword("random4");
-    System.out.println(b2.deposit(55));
-    System.out.println(b2.getBalance());
+    System.out.println(b2.deposit(150));
+    System.out.println("new balance: " + b2.getBalance());
+    System.out.println(b2.withdraw(200));
+    System.out.println("new balance: " + b2.getBalance());
     System.out.println(b2.authenticate("random1"));
   }
 }
